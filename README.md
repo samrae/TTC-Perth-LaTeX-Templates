@@ -31,6 +31,8 @@ It costs around $28.
 ### LaTeX
 Move the **ttc-assignments** directory into `~/Library/texmf/tex/latex/`, or alternatively any directory in LaTeX's path.
 
+Move the **Trinity.bst** BibTeX style file into `~/Library/texmf/bibtex/bst/`.
+
 ### Scrivener
 Move the *contents* of the **Compile settings** directory into `~/Library/Application Support/Scrivener/CompileSettings/`
 
