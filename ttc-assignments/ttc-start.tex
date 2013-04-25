@@ -24,7 +24,8 @@
 \usepackage{xltxtra} % Includes fontspec
 \defaultfontfeatures{Numbers=OldStyle,Scale=MatchLowercase}
 
-\setmainfont[Mapping=tex-text}{Times New Roman}
+% If you have only the normal Times New Roman font, use this line
+\setmainfont[Mapping=tex-text]{Times New Roman}
 
 % If you have the Times New Roman Std font from Monotype, use this line instead
 %\setmainfont[Mapping=tex-text,ItalicFont={Times New Roman Italic},BoldFont={Times New Roman Bold}]{Times NR MT Std}
@@ -56,8 +57,13 @@
 %
 % Functions for college papers
 %
+
 % Easy small capsing of translations and names for God
-\newcommand{\tr}[1]{\textsc{#1}} % General (less-used) translations
+% 	NOTE: These will only work with fonts that have 
+% 	genuine small caps characters in the font set.
+
+\newcommand{\tr}[1]{\textsc{#1}} % Manual translation
+
 \newcommand{\tniv}{\tr{tniv}}
 \newcommand{\niv}{\tr{niv}}
 \newcommand{\nrsv}{\tr{nrsv}}
@@ -65,7 +71,6 @@
 
 \newcommand{\nt}{\textsc{nt}}
 \newcommand{\ot}{\textsc{ot}}
-
 
 \newcommand{\lord}{\textsc{Lord}}
 \newcommand{\god}{\textsc{God}}
